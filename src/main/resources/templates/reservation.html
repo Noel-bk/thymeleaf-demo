@@ -12,10 +12,15 @@
             <th>name</th>
         </tr>
         <tr th:each="reservation : ${reservations}">
-            <td th:text="${reservation.id}">Onions</td>
-            <td th:text="${reservation.reservationName}">Onions</td>
+            <td th:text="${reservation.id}"></td>
+            <td th:text="${reservation.reservationName}"></td>
         </tr>
     </table>
+
+    <div th:object="${noel}">
+        <p>Id: <span th:text="*{id}"></span></p>
+        <p>name: <span th:text="*{reservationName}"></span></p>
+    </div>
 
 </h1>
 <p>

@@ -29,6 +29,8 @@ public class ReservationController {
         saveMockData();
         model.addAttribute("reservations", reservationRepository.findAll());
 
+        model.addAttribute("noel", reservationRepository.save(new Reservation("Noel")));
+
         return "reservation";
     }
 
