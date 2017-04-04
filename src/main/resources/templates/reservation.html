@@ -22,6 +22,12 @@
         <p>name: <span th:text="*{reservationName}"></span></p>
     </div>
 
+    <hr />s
+
+    <div th:object="${noel}">
+        <p th:text="|*{id}: *{reservationName}|"></p>
+    </div>
+
 </h1>
 <p>
     Current time is <span th:text="${serverTime}" />
