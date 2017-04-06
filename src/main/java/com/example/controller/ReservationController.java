@@ -30,6 +30,7 @@ public class ReservationController {
         model.addAttribute("reservations", reservationRepository.findAll());
 
         model.addAttribute("noel", reservationRepository.save(new Reservation("Noel")));
+        model.addAttribute("booleanValue", true);
 
         return "reservation";
     }

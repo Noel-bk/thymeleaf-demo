@@ -37,6 +37,10 @@
     <p>The year is <span th:text="2017">year</span>.</p>
     <p>In two years, it will be <span th:text="2017 + 2">year</span>.</p>
 
+    <hr />
+
+    <div th:if="${booleanValue} == true">True that</div>
+
 <p>
     Current time is <span th:text="${serverTime}" />
 </p>
