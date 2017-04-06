@@ -33,6 +33,10 @@
         <p th:text="*{id} + ':' + *{reservationName}"></p>
     </div>
 
+    <hr />
+    <p>The year is <span th:text="2017">year</span>.</p>
+    <p>In two years, it will be <span th:text="2017 + 2">year</span>.</p>
+
 <p>
     Current time is <span th:text="${serverTime}" />
 </p>
