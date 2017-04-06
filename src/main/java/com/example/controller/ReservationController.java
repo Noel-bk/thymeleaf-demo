@@ -31,6 +31,7 @@ public class ReservationController {
 
         model.addAttribute("noel", reservationRepository.save(new Reservation("Noel")));
         model.addAttribute("booleanValue", true);
+        model.addAttribute("nullValue", null);
 
         return "reservation";
     }
